@@ -142,7 +142,7 @@ resource "aws_iam_role" "karpenter_controller" {
 }
 
 resource "aws_iam_policy" "karpenter_controller_role_policy" {
-  policy = file("~/Downloads/terraform/modules/eks/controller-policy.json")
+  policy = file(var.controller_file_path)
   name   = "KarpenterControllerRolePolicy"
 }
 

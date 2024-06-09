@@ -53,6 +53,7 @@ variable "node_group_name" {
 # variable "sg_id" {}
 
 variable "cluster_name" {}
+variable "ingress_rules" {}
 
 variable "aws_profile" {}
-variable "ingress_rules" {}
+variable "controller_file_path" {}

@@ -1,11 +1,12 @@
 region        = "us-east-1"
+aws_profile   = "default"
 region_name   = "virginia"
 project_name  = "sample-project-terraform"
 key_name      = "my_key"
 ami           = "ami-0e001c9271cf7f3b9"
 instance_type = "t2.micro"
 cluster_name  = "eks"
-aws_profile   = "my_personal_aws"
+controller_file_path = "~/Downloads/Terraform-aws/aws-terraform/modules/eks/controller-policy.json"
 
 ingress_rules = {
   http = {
